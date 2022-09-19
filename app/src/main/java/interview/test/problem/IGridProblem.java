@@ -21,7 +21,7 @@ public interface IGridProblem {
      * return string = YES
      * @param grid the parameter grid
      * @param pattern the pattern to check
-     * @return "YES" or "NO" depending on if the pattern exists within the main grid
+     * @return true or false depending on if the pattern exists within the main grid
      */
-    public String solveGrid(String[] grid, String[] pattern);
+    public boolean solveGrid(String[] grid, String[] pattern);
 }
