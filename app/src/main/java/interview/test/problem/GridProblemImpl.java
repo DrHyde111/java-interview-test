@@ -7,7 +7,7 @@ public class GridProblemImpl implements IGridProblem {
      */
     @Override
     public boolean solveGrid(String[] grid, String[] pattern) {
-        // TODO Implement the 
+        // TODO Implement the solution
         return false;
     }
     
