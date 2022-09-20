@@ -4,10 +4,17 @@ import java.util.Random;
 
 public class Utility {
     
-    public static String[] generateGrid(int width, int length){
+    /**
+     * Generate a random grid given a width and height
+     * @param width - the width of the grid
+     * @param heigh - the heigh of the grid
+     * @return
+     * grid
+     */
+    public static String[] generateGrid(int width, int height){
         Random rand = new Random();
-        String[] grid = new String[length];
-        for(int y = 0; y < length; y++){
+        String[] grid = new String[height];
+        for(int y = 0; y < height; y++){
             StringBuilder randomString = new StringBuilder();
             for(int x = 0; x < width; x++){
                 randomString.append(rand.nextInt(10));
