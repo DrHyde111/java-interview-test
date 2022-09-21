@@ -10,10 +10,11 @@ Please unit test your code using [unit test module](app/src/test/java/interview/
 ### Create a branch and implement solution
 Please create a branch off of ```main```. Once your implementation is completed. Submit a PR to be reviewed.
 
-### PR considerations
+### Pull Request considerations
 1. Time and space complexity of the implementation
-2. Any issues or considerations.
-3. An explaination of your solution
+2. An explaination of your solution
+3. Any issues or challenges.
 
 ### Extras
-1. How would you make this code usable by other applications.
+1. How would you make this code usable by other applications?
+2. What improvements might you make to the project.
