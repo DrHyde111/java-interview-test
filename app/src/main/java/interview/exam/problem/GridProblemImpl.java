@@ -1,4 +1,4 @@
-package interview.test.problem;
+package interview.exam.problem;
 
 public class GridProblemImpl implements IGridProblem {
 

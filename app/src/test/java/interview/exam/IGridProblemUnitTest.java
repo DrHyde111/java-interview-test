@@ -1,4 +1,4 @@
-package interview.test;
+package interview.exam;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -7,8 +7,8 @@ import java.util.Random;
 
 import org.junit.Test;
 
-import interview.test.problem.GridProblemImpl;
-import interview.test.problem.IGridProblem;
+import interview.exam.problem.GridProblemImpl;
+import interview.exam.problem.IGridProblem;
 
 public class IGridProblemUnitTest {
     

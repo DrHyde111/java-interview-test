@@ -1,8 +1,8 @@
-package interview.test;
+package interview.exam;
 
 import org.junit.Test;
 
-public class InterviewTests {
+public class InterviewUnitTests {
     
     @Test public void TestCase1(){
 
