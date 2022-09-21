@@ -1,6 +1,7 @@
 package interview.test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Random;
 
@@ -14,7 +15,7 @@ public class IGridProblemUnitTest {
     private IGridProblem interfaceToTest = new GridProblemImpl();
     private Random rand = new Random();
 
-    @Test public void TestCase1(){
+    @Test public void shouldReturnTrue_whenPatternExistsInGrid(){
         String[] grid = Utility.generateGrid(10, 10);
         String[] pattern = Utility.generatePatternThatExists(grid);
         for(String row : grid){
@@ -23,10 +24,10 @@ public class IGridProblemUnitTest {
         for (String row : pattern){
             System.out.println(row);
         }
-        // assertEquals("YES", interfaceToTest.solveGrid(grid, pattern));
+        assertTrue(interfaceToTest.solveGrid(grid, pattern));
     }
 
-    @Test public void TestCase2(){
+    @Test public void shouldReturnFalse_whenCheckingForRandomGrid(){
         String[] grid = Utility.generateGrid(100, 100);
         String[] pattern = Utility.generateGrid(rand.nextInt(100), rand.nextInt(100));
         for(String row : grid){
@@ -35,14 +36,6 @@ public class IGridProblemUnitTest {
         for(String row : pattern){
             System.out.println(row);
         }
-        // Loop until pattern doesn't exist in the grid
-        // while(interfaceToTest.solveGrid(grid, pattern).equalsIgnoreCase("YES")){
-        //     pattern = Utility.generateGrid(20, 20);
-        // }
-        // assertEquals("NO", interfaceToTest.solveGrid(grid, pattern));
-    }
-
-    @Test public void TestCase3(){
-
+        assertFalse(interfaceToTest.solveGrid(grid, pattern));
     }
 }

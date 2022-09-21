@@ -2,14 +2,16 @@ package interview.test;
 
 import java.util.Random;
 
+/**
+ * Testing utility methods that generate test data sets
+ */
 public class Utility {
     
     /**
      * Generate a random grid given a width and height
      * @param width - the width of the grid
      * @param heigh - the heigh of the grid
-     * @return
-     * grid
+     * @return grid
      */
     public static String[] generateGrid(int width, int height){
         Random rand = new Random();
@@ -43,9 +45,5 @@ public class Utility {
             return pattern;
         }
         throw new IllegalArgumentException("Grid is null or empty");
-    }
-
-    public static String[] generatePatternThatDoesNotExists(String[] pattern){
-        return null;
     }
 }
