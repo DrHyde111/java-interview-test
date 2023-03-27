@@ -28,4 +28,6 @@ public interface IGridProblem {
      * @return true or false depending on if the pattern exists within the main grid
      */
     public boolean solveGrid(String[] grid, String[] pattern);
+
+    public boolean solveGridBetter(String[] grid, String[] pattern);
 }
